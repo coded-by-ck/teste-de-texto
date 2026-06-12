@@ -1,0 +1,25 @@
+Seleção inicial de fotos para o site 'Meu Lugar Favorito'.
+Use a pasta assets/img dentro do projeto.
+
+Mapeamento:
+hero-capa.jpg = foto 12 na grade / original: 7C455D27-3C53-4F9E-9746-938BD7915FC4.jpg
+timeline-01-comeco.jpg = foto 17 na grade / original: d10edd83-be57-4c6e-9d8a-65a3440ad79a.jpg
+timeline-02-primeiros-momentos.jpg = foto 13 na grade / original: 216B2405-C409-4A1A-B257-E58CE30A05AF.jpg
+timeline-03-sorrisos.jpg = foto 06 na grade / original: 3405ef9b-d31d-45f1-936a-7ba0a9d99c3d.jpg
+timeline-04-noite.jpg = foto 58 na grade / original: 83a0af06-bbd3-4c4f-a078-82fce20e2005.jpg
+galeria-01.jpg = foto 09 na grade / original: 498b12dd-6788-4925-bbc2-24ce57c1c9b8.jpg
+galeria-02.jpg = foto 07 na grade / original: cfefb900-ae5e-417c-ba75-b3bdd0a2437f.jpg
+galeria-03.jpg = foto 23 na grade / original: 509938D0-052C-4C67-8DA4-FB6C972C3C5F.jpg
+galeria-04.jpg = foto 27 na grade / original: A20250C1-1372-48D7-9A9B-AFB86EA25E64.jpg
+galeria-05.jpg = foto 34 na grade / original: ACFAD6F1-814E-48C8-B9BF-7FC37CCF904B.jpg
+galeria-06.jpg = foto 35 na grade / original: A6F34FBB-BA4D-4AA4-89BD-C21CAB0B5262.jpg
+galeria-07.jpg = foto 41 na grade / original: 4b944d42-2c48-4253-b5ec-79720ac8da1b.jpg
+galeria-08.jpg = foto 43 na grade / original: 1B5BCDE9-BCFD-4BAB-B423-7FA98A72F745.jpg
+galeria-09.jpg = foto 47 na grade / original: CB78F2C8-0E7D-44F5-A68E-D1EB5614075E.jpg
+galeria-10.jpg = foto 61 na grade / original: c9907be6-3e8e-47be-a0ca-668daf28f5e4.JPEG
+final.jpg = foto 47 na grade / original: CB78F2C8-0E7D-44F5-A68E-D1EB5614075E.jpg
+secreta-01.jpg = foto 12 na grade / original: 7C455D27-3C53-4F9E-9746-938BD7915FC4.jpg
+secreta-02.jpg = foto 20 na grade / original: c57f9606-0829-4048-90f1-7c2d99733197.jpg
+secreta-03.jpg = foto 29 na grade / original: 3312A30F-8FCF-4B76-A0E7-5D7502C5F0B7.jpg
+
+Observação: se quiser trocar alguma foto, é só substituir mantendo o mesmo nome do arquivo.

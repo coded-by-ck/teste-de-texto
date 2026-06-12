@@ -1,0 +1,11 @@
+Fotos extras para a abertura cinematográfica do site Meu Lugar Favorito.
+
+Copie a pasta assets/img para dentro do seu projeto, adicionando estes arquivos.
+Eles evitam que a abertura repita hero-capa.jpg.
+
+hero-02.jpg = foto 13 da grade / original: 216B2405-C409-4A1A-B257-E58CE30A05AF.jpg
+hero-03.jpg = foto 20 da grade / original: c57f9606-0829-4048-90f1-7c2d99733197.jpg
+hero-04.jpg = foto 29 da grade / original: 3312A30F-8FCF-4B76-A0E7-5D7502C5F0B7.jpg
+hero-05.jpg = foto 47 da grade / original: CB78F2C8-0E7D-44F5-A68E-D1EB5614075E.jpg
+
+Se quiser trocar alguma foto, basta substituir mantendo o mesmo nome do arquivo.

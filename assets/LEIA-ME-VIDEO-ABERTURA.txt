@@ -1,0 +1,9 @@
+Vídeo sugerido para colocar no meio da abertura cinematográfica.
+
+Copie a pasta assets/video para dentro do projeto.
+Arquivo esperado no projeto:
+assets/video/momento-01.mp4
+
+Arquivo original usado: 8e205bf5-29c6-4608-ab0b-1114aebe8876.mp4
+
+Se esse não for o vídeo certo, substitua mantendo o nome momento-01.mp4.

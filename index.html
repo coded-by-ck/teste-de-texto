@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Meu Lugar Favorito - um presente romântico de Dia dos Namorados."
+    />
+    <title>Meu Lugar Favorito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true"></div>
+
+    <section class="splash access-screen" id="accessGate" aria-label="Tela de acesso do presente">
+      <div class="splash__bg" aria-hidden="true"></div>
+      <div class="splash__content">
+        <p class="eyebrow">Nosso segredo</p>
+        <h1>Antes de abrir nosso presente...</h1>
+        <p>
+          Só quem conhece nossa história consegue entrar aqui.
+        </p>
+        <form class="access-form" id="accessForm" novalidate>
+          <label for="dateAnswer">Qual é a nossa data?</label>
+          <input
+            id="dateAnswer"
+            name="dateAnswer"
+            type="password"
+            inputmode="numeric"
+            autocomplete="off"
+            placeholder="Digite aqui..."
+          />
+          <label for="nameAnswer">
+            Quando juntamos Erick + Isabela, qual nome nasceu desse amor?
+          </label>
+          <input
+            id="nameAnswer"
+            name="nameAnswer"
+            type="password"
+            autocomplete="off"
+            placeholder="Digite aqui..."
+          />
+          <button class="btn btn--primary" id="accessSubmit" type="submit">
+            Abrir meu lugar favorito
+          </button>
+          <p class="access-message" id="accessMessage" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="splash" id="splash" aria-label="Abertura do presente" hidden>
+      <div class="splash__bg" aria-hidden="true"></div>
+      <div class="splash__content">
+        <p class="eyebrow">Dia dos Namorados</p>
+        <h1>Meu Lugar Favorito</h1>
+        <p>
+          Fiz isso pra você. Não é só um presente. É um pedacinho do que eu
+          sinto, do que eu lembro, e do quanto você se tornou especial pra mim.
+        </p>
+        <button class="btn btn--primary" id="openGift" type="button">
+          Abrir meu presente
+        </button>
+      </div>
+    </section>
+
+    <section class="cinematic-intro cinema-opening" id="cinematicIntro" aria-label="Abertura cinematográfica especial" hidden>
+      <div class="cinema-progress" aria-hidden="true">
+        <span id="cinemaProgress"></span>
+      </div>
+      <button class="cinema-skip" id="cinemaSkip" type="button">Pular</button>
+
+      <div class="cinema-slides" id="cinemaSlides"></div>
+
+      <div class="cinema-controls" aria-label="Controles da abertura especial">
+        <button id="cinemaPrev" type="button" aria-label="Slide anterior">‹</button>
+        <div class="cinema-dots" id="cinemaDots" aria-hidden="true"></div>
+        <button id="cinemaNext" type="button" aria-label="Próximo slide">›</button>
+      </div>
+    </section>
+
+    <header class="topbar is-locked" aria-label="Navegação principal">
+      <a class="brand" href="#hero" aria-label="Ir para o início">Meu Lugar Favorito</a>
+      <nav class="nav">
+        <a href="#historia">História</a>
+        <a href="#galeria">Momentos</a>
+        <a href="#carta">Carta</a>
+      </nav>
+      <button class="audio-ready music-toggle" id="musicToggle" type="button" aria-label="Tocar ou pausar música">
+        <span aria-hidden="true">♪</span>
+      </button>
+    </header>
+
+    <main id="site" class="site is-locked">
+      <section class="hero section" id="hero">
+        <div class="hero__media reveal">
+          <img
+            src="assets/img/hero-capa.jpg"
+            alt="Foto especial do casal em clima romântico"
+          />
+        </div>
+        <div class="hero__copy reveal">
+          <p class="eyebrow">Nosso presente</p>
+          <h2>Você virou meu lugar favorito</h2>
+          <p class="hero__subtitle">
+            Porque, em todos os cenários, meu lugar favorito sempre foi você.
+          </p>
+          <p>
+            Tem gente que marca a vida da gente aos poucos. Você marcou de um
+            jeito que ficou. No meu pensamento, nas minhas lembranças, no meu
+            coração... e em tudo que hoje me faz sorrir quando lembro da gente.
+          </p>
+          <a class="btn btn--primary" href="#historia">Ver nossa história</a>
+        </div>
+      </section>
+
+      <section class="memory-video-block cinematic-love-video section reveal" id="memoryVideoBlock">
+        <span class="floating-heart floating-heart--one" aria-hidden="true">♥</span>
+        <span class="floating-heart floating-heart--two" aria-hidden="true">♥</span>
+        <span class="floating-heart floating-heart--three" aria-hidden="true">♥</span>
+        <div class="memory-video-copy">
+          <p class="eyebrow">Momento vivo</p>
+          <h3>Como cena de filme</h3>
+          <p>Porque tem lembrança que não cabe só em foto. Ela acontece, gira, sorri... e fica.</p>
+        </div>
+
+        <div class="memory-video-frame">
+          <span class="film-tag">REC • Meu Lugar Favorito</span>
+          <video
+            id="memoryVideo"
+            src="assets/video/momento-01.mp4"
+            autoplay
+            playsinline
+            preload="metadata"
+            controls
+          ></video>
+        </div>
+      </section>
+
+      <section class="section counter-section reveal" id="contador">
+        <p class="eyebrow">Nosso tempo</p>
+        <h2>Desde que você virou parte da minha vida</h2>
+        <div class="counter counter-grid" aria-live="polite">
+          <div class="counter-card">
+            <strong data-counter="days">0</strong>
+            <span>DIAS</span>
+          </div>
+          <div class="counter-card">
+            <strong data-counter="hours">00</strong>
+            <span>HORAS</span>
+          </div>
+          <div class="counter-card">
+            <strong data-counter="minutes">00</strong>
+            <span>MINUTOS</span>
+          </div>
+          <div class="counter-card">
+            <strong data-counter="seconds">00</strong>
+            <span>SEGUNDOS</span>
+          </div>
+        </div>
+        <p class="section-note">
+          Desde 23/02/2023, o tempo deixou de ser só tempo. Virou história,
+          memória e sentimento.
+        </p>
+      </section>
+
+      <section class="section" id="historia">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Capítulos nossos</p>
+          <h2>Nossa história</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-card reveal">
+            <img src="assets/img/timeline-01-comeco.jpg" alt="Memória de onde tudo começou" />
+            <div>
+              <span>01</span>
+              <h3>Onde tudo começou</h3>
+              <p>
+                Talvez no começo a gente nem imaginasse o quanto isso tudo ia
+                significar. Mas, de algum jeito, você foi chegando... e quando eu
+                percebi, já tinha se tornado alguém impossível de não sentir.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-card reveal">
+            <img
+              src="assets/img/timeline-02-primeiros-momentos.jpg"
+              alt="Primeiros momentos especiais"
+            />
+            <div>
+              <span>02</span>
+              <h3>Os primeiros momentos que ficaram</h3>
+              <p>
+                Tem momentos que parecem simples pra qualquer outra pessoa. Mas
+                com você, até o mais pequeno detalhe ganhou importância. Um olhar,
+                um abraço, uma foto, um sorriso... e de repente tudo começou a ter
+                mais cor.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-card reveal">
+            <img src="assets/img/timeline-03-sorrisos.jpg" alt="Sorrisos guardados na memória" />
+            <div>
+              <span>03</span>
+              <h3>Quando eu percebi</h3>
+              <p>
+                Em algum momento, deixou de ser só companhia. Deixou de ser só
+                carinho. Virou vontade de estar perto, de cuidar, de viver mais
+                coisas, de te olhar e pensar: caramba... ela mexe muito comigo.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-card reveal">
+            <img src="assets/img/timeline-04-noite.jpg" alt="Noite romântica do casal" />
+            <div>
+              <span>04</span>
+              <h3>O que ainda quero viver com você</h3>
+              <p>
+                E se já foi bonito até aqui, eu ainda quero muitos outros
+                capítulos com você. Mais risadas, mais abraços, mais momentos
+                nossos, mais memórias, mais nós.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="galeria">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Nossas lembranças</p>
+          <h2>Momentos que moram em mim</h2>
+          <p>Algumas fotos guardam mais do que imagem. Guardam sensação.</p>
+        </div>
+        <div class="gallery">
+          <figure class="gallery-item reveal">
+            <button type="button" data-full="assets/img/galeria-01.jpg" data-caption="Seu sorriso sempre me desmonta.">
+              <img src="assets/img/galeria-01.jpg" alt="Momento romântico 1" />
+            </button>
+            <figcaption>Seu sorriso sempre me desmonta.</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <button type="button" data-full="assets/img/galeria-02.jpg" data-caption="Um dos meus lugares favoritos sempre foi perto de você.">
+              <img src="assets/img/galeria-02.jpg" alt="Momento romântico 2" />
+            </button>
+            <figcaption>Um dos meus lugares favoritos sempre foi perto de você.</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <button type="button" data-full="assets/img/galeria-03.jpg" data-caption="Essa foto guarda mais do que imagem. Guarda sensação.">
+              <img src="assets/img/galeria-03.jpg" alt="Momento romântico 3" />
+            </button>
+            <figcaption>Essa foto guarda mais do que imagem. Guarda sensação.</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <button type="button" data-full="assets/img/galeria-04.jpg" data-caption="Toda vez que eu olho pra nós, eu entendo um pouco mais do que sinto.">
+              <img src="assets/img/galeria-04.jpg" alt="Momento romântico 4" />
+            </button>
+            <figcaption>Toda vez que eu olho pra nós, eu entendo um pouco mais do que sinto.</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <button type="button" data-full="assets/img/galeria-05.jpg" data-caption="Você consegue deixar até o silêncio bom.">
+              <img src="assets/img/galeria-05.jpg" alt="Momento romântico 5" />
+            </button>
+            <figcaption>Você consegue deixar até o silêncio bom.</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <button type="button" data-full="assets/img/galeria-06.jpg" data-caption="Meu tipo favorito de momento: quando é com você.">
+              <img src="assets/img/galeria-06.jpg" alt="Momento romântico 6" />
+            </button>
+            <figcaption>Meu tipo favorito de momento: quando é com você.</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <button type="button" data-full="assets/img/galeria-07.jpg" data-caption="Tem algo em nós que simplesmente faz sentido.">
+              <img src="assets/img/galeria-07.jpg" alt="Momento romântico 7" />
+            </button>
+            <figcaption>Tem algo em nós que simplesmente faz sentido.</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <button type="button" data-full="assets/img/galeria-08.jpg" data-caption="Seu carinho ficou em mim de um jeito bonito.">
+              <img src="assets/img/galeria-08.jpg" alt="Momento romântico 8" />
+            </button>
+            <figcaption>Seu carinho ficou em mim de um jeito bonito.</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <button type="button" data-full="assets/img/galeria-09.jpg" data-caption="Eu gosto da forma como você bagunça meu coração.">
+              <img src="assets/img/galeria-09.jpg" alt="Momento romântico 9" />
+            </button>
+            <figcaption>Eu gosto da forma como você bagunça meu coração.</figcaption>
+          </figure>
+          <figure class="gallery-item reveal">
+            <button type="button" data-full="assets/img/galeria-10.jpg" data-caption="Entre tantas lembranças, eu sempre volto pras que têm você.">
+              <img src="assets/img/galeria-10.jpg" alt="Momento romântico 10" />
+            </button>
+            <figcaption>Entre tantas lembranças, eu sempre volto pras que têm você.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="amo">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Detalhes dela</p>
+          <h2>O que eu amo em você</h2>
+          <p>
+            Se eu fosse resumir você em poucas palavras, eu não conseguiria. Mas
+            eu poderia começar assim:
+          </p>
+        </div>
+        <div class="love-grid">
+          <article class="love-card reveal"><h3>Seu sorriso</h3><p>Porque ele tem o dom de mudar meu dia sem nem pedir licença.</p></article>
+          <article class="love-card reveal"><h3>Seu olhar</h3><p>Porque tem um jeito de me prender, me desmontar e me atrair ao mesmo tempo.</p></article>
+          <article class="love-card reveal"><h3>Seu jeitinho</h3><p>Porque você tem uma mistura linda de doçura, força e presença.</p></article>
+          <article class="love-card reveal"><h3>Seu carinho</h3><p>Porque você faz eu me sentir querido de um jeito diferente.</p></article>
+          <article class="love-card reveal"><h3>Seu abraço</h3><p>Porque quando eu tô nele, o mundo parece menos pesado.</p></article>
+          <article class="love-card reveal"><h3>Sua presença</h3><p>Porque quando você está, tudo parece mais leve.</p></article>
+          <article class="love-card reveal"><h3>Seu toque</h3><p>Porque tem coisa que a pele sente e o coração entende.</p></article>
+          <article class="love-card reveal"><h3>Sua risada</h3><p>Porque ela fica na minha cabeça de um jeito bom.</p></article>
+          <article class="love-card reveal"><h3>Nosso jeito junto</h3><p>Porque com você até as coisas simples viram lembrança.</p></article>
+          <article class="love-card reveal"><h3>A paz que você me traz</h3><p>Porque você tem esse jeito de acalmar partes minhas sem perceber.</p></article>
+          <article class="love-card reveal"><h3>O desejo que você desperta</h3><p>Porque você me faz sentir amor, vontade e admiração tudo junto.</p></article>
+          <article class="love-card reveal"><h3>Você sendo você</h3><p>Porque no fim, é isso que eu mais amo: você do seu jeito.</p></article>
+        </div>
+      </section>
+
+      <section class="section intimate reveal" id="so-a-gente">
+        <div class="intimate__intro">
+          <p class="eyebrow">Intimidade</p>
+          <h2>Só a gente</h2>
+          <p>
+            Tem uma parte do que eu sinto que não cabe em qualquer palavra. Ela
+            mora no toque, no olhar, na vontade e no jeito que você mexe comigo.
+          </p>
+          <button class="btn btn--ghost" id="openSecret" type="button">
+            Abrir nosso cantinho
+          </button>
+        </div>
+        <div class="secret" id="secretContent" hidden>
+          <div class="secret__photos">
+            <img src="assets/img/secreta-01.jpg" alt="Foto íntima e elegante 1" />
+            <img src="assets/img/secreta-02.jpg" alt="Foto íntima e elegante 2" />
+            <img src="assets/img/secreta-03.jpg" alt="Foto íntima e elegante 3" />
+          </div>
+          <div class="secret__text">
+            <p>
+              Você tem esse poder bonito de me deixar sem rumo e em paz ao mesmo
+              tempo. Tem algo no seu olhar, no seu jeito, na sua presença... que
+              me atrai, me prende e me faz querer ficar ainda mais perto.
+            </p>
+            <p>
+              Com você, carinho e desejo nunca pareceram coisas separadas. E
+              talvez seja isso que faz tudo entre nós ter esse gosto tão diferente.
+            </p>
+            <div class="whispers">
+              <span>Tem um lado nosso que é só nosso... e eu amo isso.</span>
+              <span>Você me acalma e me incendeia ao mesmo tempo.</span>
+              <span>Seu beijo fica na memória do corpo.</span>
+              <span>O jeito que você me olha faz muita coisa em mim.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section soundtrack" id="trilha">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Som da gente</p>
+          <h2>Nossa trilha sonora</h2>
+          <p>
+            Toda história bonita tem uma trilha. A nossa tem carinho, saudade,
+            risada, desejo e esse jeito meio nosso de transformar qualquer
+            momento em lembrança.
+          </p>
+        </div>
+        <div class="music-grid">
+          <article class="music-card song-card reveal" data-audio="assets/audio/velha-infancia.mp3">
+            <span class="song-number">01</span>
+            <h3>Velha Infância</h3>
+            <p class="song-artist">Tribalistas</p>
+            <p class="song-caption">O começo leve de tudo aquilo que virou sentimento.</p>
+            <div class="song-actions">
+              <button class="song-play" type="button">Ouvir trecho</button>
+              <div class="sound-wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </article>
+          <article class="music-card song-card reveal" data-audio="assets/audio/meu-abrigo.mp3">
+            <span class="song-number">02</span>
+            <h3>Meu Abrigo</h3>
+            <p class="song-artist">Melim</p>
+            <p class="song-caption">Porque você tem esse jeito de parecer casa, colo e paz.</p>
+            <div class="song-actions">
+              <button class="song-play" type="button">Ouvir trecho</button>
+              <div class="sound-wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </article>
+          <article class="music-card song-card reveal" data-audio="assets/audio/tiro-alvaro.mp3">
+            <span class="song-number">03</span>
+            <h3>Tiro ao Álvaro</h3>
+            <p class="song-artist">Elis Regina e Adoniran Barbosa</p>
+            <p class="song-caption">Quando o amor acerta em cheio, não tem como fingir que não sentiu.</p>
+            <div class="song-actions">
+              <button class="song-play" type="button">Ouvir trecho</button>
+              <div class="sound-wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </article>
+          <article class="music-card song-card reveal" data-audio="assets/audio/beija-flor.mp3">
+            <span class="song-number">04</span>
+            <h3>Flor e o Beija-Flor</h3>
+            <p class="song-artist">Henrique & Juliano feat. Marília Mendonça</p>
+            <p class="song-caption">Porque algumas histórias parecem nascer pra se encontrar.</p>
+            <div class="song-actions">
+              <button class="song-play" type="button">Ouvir trecho</button>
+              <div class="sound-wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </article>
+          <article class="music-card song-card reveal" data-audio="assets/audio/ainda-gosto-dela.mp3">
+            <span class="song-number">05</span>
+            <h3>Ainda Gosto Dela</h3>
+            <p class="song-artist">Skank</p>
+            <p class="song-caption">Porque mesmo nas idas e vindas, o sentimento continua aqui.</p>
+            <div class="song-actions">
+              <button class="song-play" type="button">Ouvir trecho</button>
+              <div class="sound-wave" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section letter reveal" id="carta">
+        <p class="eyebrow">Carta final</p>
+        <h2>Pra você</h2>
+        <div class="letter__body">
+          <p>Eu quis fazer isso porque você merece mais do que palavras soltas. Merece cuidado, intenção, detalhe e verdade.</p>
+          <p>E a verdade é que você se tornou alguém muito especial pra mim. Alguém que marcou minha mente, meu coração e meus dias de um jeito bonito.</p>
+          <p>Cada foto aqui guarda um pedaço do que a gente viveu. Cada frase tenta mostrar um pouco do que, às vezes, eu nem sei explicar direito... só sentir.</p>
+          <p>Se eu pudesse resumir tudo em uma frase, seria essa:<br />em meio a tanta coisa, você virou meu lugar favorito.</p>
+          <p>Feliz Dia dos Namorados, meu amor.<br />E obrigado por ser uma das partes mais bonitas da minha vida.</p>
+        </div>
+      </section>
+
+      <section class="section ending reveal" id="final">
+        <img src="assets/img/final.jpg" alt="Foto final romântica do casal" />
+        <div class="ending__copy">
+          <p class="eyebrow">Última verdade</p>
+          <h2>E se esse presente tivesse uma última verdade, seria essa: eu ainda quero viver muito mais com você.</h2>
+          <button class="btn btn--primary" id="finalButton" type="button">Clique aqui</button>
+          <p class="final-message" id="finalMessage" hidden>
+            Você continua sendo meu lugar favorito.
+          </p>
+        </div>
+      </section>
+
+      <section id="finalGift" class="final-gift section reveal">
+        <div class="section-heading final-gift__header">
+          <p class="eyebrow">Surpresa final</p>
+          <h2>Calma... ainda tem mais uma coisa.</h2>
+          <p>Depois de tudo isso, eu ainda guardei um último presente pra você.</p>
+          <button id="openGiftVaultBtn" class="gift-reveal-btn" type="button">
+            Meu último presente
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <audio id="giftMusic" src="assets/audio/ultimo-presente.mp3" preload="auto"></audio>
+    <audio id="bgMusic" src="assets/audio/complicada-e-perfeitinha.mp3" loop preload="auto"></audio>
+
+    <div id="giftVault" class="gift-vault" hidden>
+      <div class="gift-vault-backdrop"></div>
+      <div class="gift-vault-panel" role="dialog" aria-modal="true" aria-labelledby="giftVaultTitle">
+        <button id="closeGiftVaultBtn" class="gift-vault-close" type="button" aria-label="Fechar presente">×</button>
+
+        <div class="gift-vault-header">
+          <p class="eyebrow">Presente desbloqueado</p>
+          <h2 id="giftVaultTitle">Seu combo secreto foi liberado</h2>
+          <p>Três vales. Uma dona. E um Erick disposto a cumprir todos.</p>
+        </div>
+
+        <div class="gift-vault-coupons">
+          <article class="gift-ticket gift-coupon" data-gift="dinner">
+            <div class="gift-ticket-top">
+              <span class="ticket-stamp">VALE</span>
+              <span class="ticket-number">01</span>
+            </div>
+            <div class="gift-ticket-body">
+              <span class="coupon-icon">🍷</span>
+              <h3>Vale Jantar Romântico</h3>
+              <p class="ticket-subtitle">Uma noite só nossa.</p>
+              <button class="coupon-detail-btn" type="button">Ver detalhes</button>
+            </div>
+            <div class="coupon-details">
+              <p>Você escolhe o clima: algo mais arrumadinho, algo simples, ou até um jantar improvisado do nosso jeito. O importante é ser nós dois, sem pressa, sem distração e com você sendo tratada como merece.</p>
+              <small>Válido para uma noite especial comigo.</small>
+            </div>
+            <div class="gift-ticket-footer">
+              <span>♥ Presente exclusivo ♥</span>
+            </div>
+          </article>
+
+          <article class="gift-ticket gift-coupon" data-gift="massage">
+            <div class="gift-ticket-top">
+              <span class="ticket-stamp">VALE</span>
+              <span class="ticket-number">02</span>
+            </div>
+            <div class="gift-ticket-body">
+              <span class="coupon-icon">🕯️</span>
+              <h3>Vale Massagem Relaxante</h3>
+              <p class="ticket-subtitle">Carinho em dobro.</p>
+              <button class="coupon-detail-btn" type="button">Ver detalhes</button>
+            </div>
+            <div class="coupon-details">
+              <p>Esse vale inclui carinho, paciência, cuidado e uma massagem do jeitinho que você pedir. Sem pressa, sem cobrança, só você relaxando e eu cuidando de cada detalhe.</p>
+              <small>Válido para quando você quiser carinho em dobro.</small>
+            </div>
+            <div class="gift-ticket-footer">
+              <span>♥ Presente exclusivo ♥</span>
+            </div>
+          </article>
+
+          <article class="gift-ticket gift-coupon spicy" data-gift="spicy">
+            <div class="gift-ticket-top">
+              <span class="ticket-stamp">VALE</span>
+              <span class="ticket-number">03</span>
+            </div>
+            <div class="gift-ticket-body">
+              <span class="coupon-icon">😼</span>
+              <h3>Vale Macetada 😼</h3>
+              <p class="ticket-subtitle">Esse aqui é só nosso.</p>
+              <button class="coupon-detail-btn" type="button">Ver detalhes</button>
+            </div>
+            <div class="coupon-details">
+              <p>Vale uma noite sem pressa, sem vergonha e sem muita explicação. Só nós dois, do nosso jeito, com aquele clima que começa na provocação e termina em bagunça boa.</p>
+              <small>Válido para uma noite sem pressa.</small>
+            </div>
+            <div class="gift-ticket-footer">
+              <span>♥ Presente exclusivo ♥</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <button class="back-top" id="backTop" type="button" aria-label="Voltar ao topo">↑</button>
+
+    <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-label="Foto ampliada" hidden>
+      <button class="lightbox__close" id="closeLightbox" type="button" aria-label="Fechar imagem">×</button>
+      <img id="lightboxImage" src="" alt="" />
+      <p id="lightboxCaption"></p>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

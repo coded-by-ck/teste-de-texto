@@ -1,0 +1,64 @@
+Fotos para a abertura dinâmica do site Meu Lugar Favorito.
+
+Copie a pasta assets/img/opening para dentro do projeto.
+As fotos já estão renomeadas como opening-01.jpg, opening-02.jpg etc.
+Eu deixei de fora as fotos com camiseta do Brasil.
+
+Mapeamento:
+opening-01.jpg = foto 01 da grade / original: 13ef12d5-8d60-4444-9404-aaa399a28b9e.jpg
+opening-02.jpg = foto 02 da grade / original: 7c99e5ba-eae6-456c-8c0a-044ad018687f.jpg
+opening-03.jpg = foto 03 da grade / original: c9907be6-3e8e-47be-a0ca-668daf28f5e4.jpg
+opening-04.jpg = foto 04 da grade / original: 36929235-d5b6-4022-964c-59e2c565b3f7.jpg
+opening-05.jpg = foto 05 da grade / original: 7B901261-9355-4603-9452-BDF2E173303A.jpg
+opening-06.jpg = foto 06 da grade / original: 3405ef9b-d31d-45f1-936a-7ba0a9d99c3d.jpg
+opening-07.jpg = foto 12 da grade / original: 7C455D27-3C53-4F9E-9746-938BD7915FC4.jpg
+opening-08.jpg = foto 13 da grade / original: 216B2405-C409-4A1A-B257-E58CE30A05AF.jpg
+opening-09.jpg = foto 14 da grade / original: 854525db-b89d-4c96-b06a-52067c0e67bf.jpg
+opening-10.jpg = foto 15 da grade / original: a04d59b8-5e29-4bc0-951c-36c9aaf4a31b.jpg
+opening-11.jpg = foto 22 da grade / original: 3dd38d39-ea4d-4aec-999a-44ef0f90f3d3.jpg
+opening-12.jpg = foto 23 da grade / original: 509938D0-052C-4C67-8DA4-FB6C972C3C5F.jpg
+opening-13.jpg = foto 24 da grade / original: B838D6AB-A55E-48B4-BF52-FBA553D877DD.jpg
+opening-14.jpg = foto 25 da grade / original: 9D1482B9-BA77-4865-A866-191C4BEC0F23.jpg
+opening-15.jpg = foto 26 da grade / original: D88A27EE-D5F2-406F-9523-E703F11B6372.jpg
+opening-16.jpg = foto 27 da grade / original: A20250C1-1372-48D7-9A9B-AFB86EA25E64.jpg
+opening-17.jpg = foto 28 da grade / original: 4D1927F2-8CCA-4235-97E8-7533E895436C.jpg
+opening-18.jpg = foto 29 da grade / original: 3312A30F-8FCF-4B76-A0E7-5D7502C5F0B7.jpg
+opening-19.jpg = foto 30 da grade / original: d0c3c988-42a3-48df-b89e-89468d772b40.jpg
+opening-20.jpg = foto 31 da grade / original: 8B758A80-164F-4163-A711-DBFBEF397FEE.jpg
+opening-21.jpg = foto 32 da grade / original: 21529EF6-6229-4342-B8FC-6CC8B31B11C1.jpg
+opening-22.jpg = foto 33 da grade / original: C91950B1-5E92-4CB4-AADE-5FFB996B6D91.jpg
+opening-23.jpg = foto 34 da grade / original: ACFAD6F1-814E-48C8-B9BF-7FC37CCF904B.jpg
+opening-24.jpg = foto 35 da grade / original: A6F34FBB-BA4D-4AA4-89BD-C21CAB0B5262.jpg
+opening-25.jpg = foto 36 da grade / original: A50DB6BD-8A58-4BBD-BF98-BEB028044F01.jpg
+opening-26.jpg = foto 37 da grade / original: 8130890F-59CC-40A1-97DC-8C1F41EA03BB.jpg
+opening-27.jpg = foto 38 da grade / original: 4915e790-877d-4700-a7f6-869273415b4d.jpg
+opening-28.jpg = foto 39 da grade / original: 831F2604-A015-40BE-B83E-2E7AAF91ACF1.jpg
+opening-29.jpg = foto 40 da grade / original: 8BF92385-5C7B-476A-A909-C290A6FABB89.jpg
+opening-30.jpg = foto 41 da grade / original: 4b944d42-2c48-4253-b5ec-79720ac8da1b.jpg
+opening-31.jpg = foto 42 da grade / original: 433df084-930f-49ac-9d00-514779bd7a7f.jpg
+opening-32.jpg = foto 43 da grade / original: 1B5BCDE9-BCFD-4BAB-B423-7FA98A72F745.jpg
+opening-33.jpg = foto 44 da grade / original: 876DFA41-3E9B-4391-8546-492C30F01243.jpg
+opening-34.jpg = foto 45 da grade / original: B6FC8A8E-59DD-40FC-BAE6-D80D12840299.jpg
+opening-35.jpg = foto 46 da grade / original: 85C9DBD1-D2E8-4400-A952-50BC4F3371B7.jpg
+opening-36.jpg = foto 47 da grade / original: CB78F2C8-0E7D-44F5-A68E-D1EB5614075E.jpg
+opening-37.jpg = foto 48 da grade / original: 4A88C816-49D3-49E2-86F9-A00B7B009B29.jpg
+opening-38.jpg = foto 49 da grade / original: E3E265F5-6A69-450A-B43D-FF2CF24BAE9F.jpg
+opening-39.jpg = foto 50 da grade / original: 63CEC3D7-6181-4A48-8295-D2E180835B1F.jpg
+opening-40.jpg = foto 51 da grade / original: C280D3C9-395A-49E0-ACDB-BCA198823AAB.jpg
+opening-41.jpg = foto 52 da grade / original: 86853FB5-B2C6-458C-948D-C75018D76205.jpg
+opening-42.jpg = foto 53 da grade / original: 7407F9C1-19DD-4E1E-9A6D-72BAC72E99D6.jpg
+opening-43.jpg = foto 54 da grade / original: 1679ABA2-EBEE-40B1-9D44-6FE6749BE922.jpg
+opening-44.jpg = foto 55 da grade / original: 1D8C7B3A-45BB-4CB8-A9D2-E15F010B0972.jpg
+opening-45.jpg = foto 56 da grade / original: C62E4A97-4522-490D-BFF2-92D283610821.jpg
+opening-46.jpg = foto 57 da grade / original: 88DFE1D3-F328-4E25-B19B-1913396CB7FF.jpg
+opening-47.jpg = foto 58 da grade / original: 83a0af06-bbd3-4c4f-a078-82fce20e2005.jpg
+opening-48.jpg = foto 59 da grade / original: 24ea4911-b4ed-4b7d-b293-53087b67fe05.jpg
+opening-49.jpg = foto 60 da grade / original: 5c23c223-73c7-4bfd-9e31-a25f8c98cdb3.jpg
+opening-50.jpg = foto 61 da grade / original: c9907be6-3e8e-47be-a0ca-668daf28f5e4.JPEG
+opening-51.jpg = foto 62 da grade / original: 60A0DB1A-BCEC-4EEB-8C01-B569F7288F85.JPEG
+opening-52.jpg = foto 63 da grade / original: EC3D2A7C-B9C4-4B7F-BEB6-B85788D92C8F.JPEG
+opening-53.jpg = foto 64 da grade / original: BDE545A2-A92F-44D9-89B2-7C5095EA17F3.JPEG
+opening-54.jpg = foto 65 da grade / original: 9c49b436-ef3a-4568-b317-df51e52a5f8a.JPEG
+opening-55.jpg = foto 66 da grade / original: b5a0b408-f40a-4e56-9600-866d648265f8.JPEG
+
+Se quiser remover alguma, pode apagar, mas mantenha a sequência ou ajuste a lista no JS.
